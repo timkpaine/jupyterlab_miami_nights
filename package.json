@@ -1,0 +1,58 @@
+{
+  "name": "@timkpaine/jupyterlab_miami_nights",
+  "version": "0.1.0",
+  "description": "A glowing 80s theme based on Synthwave '84 and  JupyterLab's Neon Night theme by yeebc",
+  "author": "Tim P <t.paine154@gmail.com>",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension",
+    "jupyterlab-theme",
+    "neon",
+    "cyberpunk"
+  ],
+  "license": "BSD-3-Clause",
+  "files": [
+    "lib/*.d.ts",
+    "lib/*.js.map",
+    "lib/*.js",
+    "style/*"
+  ],
+  "sideEffects": true,
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "style": "style/index.css",
+  "directories": {
+    "lib": "lib/"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rimraf lib",
+    "prepublishOnly": "npm run build",
+    "watch": "tsc -b --watch"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^2.0.0",
+    "@jupyterlab/apputils": "^2.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "~3.0.0",
+    "typedoc": "^0.15.4",
+    "typescript": "~3.7.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "jupyterlab": {
+    "extension": true,
+    "themePath": "style/index.css"
+  },
+  "homepage": "https://github.com/timkpaine/jupyterlab_miami_nights",
+  "bugs": {
+    "url": "https://github.com/timkpaine/jupyterlab_miami_nights/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timkpaine/jupyterlab_miami_nights.git"
+  }
+}

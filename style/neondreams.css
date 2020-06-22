@@ -1,0 +1,23 @@
+
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-builtin,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-def,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-error,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-keyword,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-link,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-number,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-property,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-string,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-variable,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-variable-2,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-variable-3,
+body[data-jp-theme-name="JupyterLab Miami Nights"] button[title="Switch kernel"] {
+    text-shadow: 0 0 2px #000, 0 0 10px;
+}
+
+body[data-jp-theme-name="JupyterLab Miami Nights"] .jp-SideBar .lm-TabBar-tab.lm-mod-current {
+    background: linear-gradient(to bottom, #fff951 25%, #fc28a8);
+}
+
+body[data-jp-theme-name="JupyterLab Miami Nights"] .lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
+    background: linear-gradient(to right, #fc28a8, #03edf9) !important;
+}
