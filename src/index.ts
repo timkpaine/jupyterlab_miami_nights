@@ -13,7 +13,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
   // id: '@yeebc/jupyterlab_neon_theme:plugin',
   requires: [IThemeManager],
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
-    const style = '@yeebc/jupyterlab_neon_theme/index.css';
+    const style = '@timkpaine/jupyterlab_miami_nights/index.css';
 
     // manager.register({
     //   name: 'JupyterLab Neon Night',
