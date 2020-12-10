@@ -1,4 +1,5 @@
 
+/* glow text */
 body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-builtin,
 body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-def,
 body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-error,
@@ -14,10 +15,50 @@ body[data-jp-theme-name="JupyterLab Miami Nights"] button[title="Switch kernel"]
     text-shadow: 0 0 2px #000, 0 0 10px;
 }
 
+/* side bar gradient */
 body[data-jp-theme-name="JupyterLab Miami Nights"] .jp-SideBar .lm-TabBar-tab.lm-mod-current {
-    background: linear-gradient(to bottom, #fff951 25%, #fc28a8);
+    background: linear-gradient(to bottom, #fff951 25%, #fc28a8) !important;
 }
 
+/* tab gradient */
 body[data-jp-theme-name="JupyterLab Miami Nights"] .lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
     background: linear-gradient(to right, #fc28a8, #03edf9) !important;
 }
+
+/* tab title font */
+.lm-DockPanel-tabBar .lm-TabBar-tab {
+    font-family: var(--jp-ui-font-family) !important;
+    font-size: 14px;
+}
+  
+/* tab title font */
+.jp-DocumentSearch-overlay *,  .filter .bp3-input {
+    font-family: var(--jp-ui-font-family) !important;
+    font-size: 15px;
+}
+
+/* tab title no shadow */
+.lm-DockPanel-tabBar .lm-TabBar-tab:hover:not(.lm-mod-current), 
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
+  color: var(--jp-ui-font-color0) !important;
+  text-shadow: unset !important;
+}
+
+/* tab x box */
+div.lm-TabBar-tabCloseIcon > svg > g.jp-icon-selectable-inverse {
+    fill: magenta !important;
+}
+
+/* tab x box */
+div.lm-TabBar-tabCloseIcon > svg > g.jp-icon-selectable {
+    fill: white !important;
+}
+
+div.lm-TabBar-tabCloseIcon:hover > svg > g.jp-icon-selectable {
+    fill: cyan !important;
+}
+
+div.lm-TabBar-tabCloseIcon > svg > g.jp-icon-busy {
+    fill: none !important;
+}
+
