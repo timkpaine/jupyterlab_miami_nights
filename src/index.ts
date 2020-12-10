@@ -10,19 +10,9 @@ import { IThemeManager } from '@jupyterlab/apputils';
  */
 const plugin: JupyterFrontEndPlugin<void> = {
   id: '@timkpaine/jupyterlab_miami_nights:plugin',
-  // id: '@yeebc/jupyterlab_neon_theme:plugin',
   requires: [IThemeManager],
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
     const style = '@timkpaine/jupyterlab_miami_nights/index.css';
-
-    // manager.register({
-    //   name: 'JupyterLab Neon Night',
-    //   isLight: false,
-    //   themeScrollbars: true,
-    //   load: () => manager.loadCSS(style),
-    //   unload: () => Promise.resolve(undefined)
-    // });
-
 
     manager.register({
       name: 'JupyterLab Miami Nights',
