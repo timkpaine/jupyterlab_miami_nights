@@ -15,9 +15,25 @@ body[data-jp-theme-name="JupyterLab Miami Nights"] button[title="Switch kernel"]
 }
 
 body[data-jp-theme-name="JupyterLab Miami Nights"] .jp-SideBar .lm-TabBar-tab.lm-mod-current {
-    background: linear-gradient(to bottom, #fff951 25%, #fc28a8);
+    background: linear-gradient(to bottom, #fff951 25%, #fc28a8) !important;
 }
 
 body[data-jp-theme-name="JupyterLab Miami Nights"] .lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
     background: linear-gradient(to right, #fc28a8, #03edf9) !important;
+}
+
+.lm-DockPanel-tabBar .lm-TabBar-tab {
+    font-family: var(--jp-ui-font-family) !important;
+    font-size: 14px;
+}
+  
+.jp-DocumentSearch-overlay *,  .filter .bp3-input {
+    font-family: var(--jp-ui-font-family) !important;
+    font-size: 15px;
+}
+
+.lm-DockPanel-tabBar .lm-TabBar-tab:hover:not(.lm-mod-current), 
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
+  color: var(--jp-ui-font-color0) !important;
+  text-shadow: unset !important;
 }

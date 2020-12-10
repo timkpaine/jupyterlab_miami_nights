@@ -3,6 +3,12 @@ Combination of VS Code's SynthWave '84 and JupyterLab's Neon Night, with the glo
 <img src="https://raw.githubusercontent.com/timkpaine/jupyterlab_miami_nights/master/screenshots/Miami Nights.png" />
 
 
+## Changes
+- All material changes are implemented in `neondreams.css`
+- Override all code elements to glow
+- Gradient to Tabs and Sidebar
+- Override fonts
+
 
 # original readme below
 
