@@ -45,11 +45,20 @@ body[data-jp-theme-name="JupyterLab Miami Nights"] .lm-DockPanel-tabBar .lm-TabB
 }
 
 /* tab x box */
-.lm-TabBar-tab > .jp-icon-hover .lm-TabBar-tabCloseIcon > svg > g.jp-icon-selectable-inverse {
-    fill: magenta;
+div.lm-TabBar-tabCloseIcon > svg > g.jp-icon-selectable-inverse {
+    fill: magenta !important;
 }
 
 /* tab x box */
-.lm-TabBar-tab > .jp-icon-hover .lm-TabBar-tabCloseIcon > svg > g.jp-icon-selectable {
-    fill: white;
+div.lm-TabBar-tabCloseIcon > svg > g.jp-icon-selectable {
+    fill: white !important;
 }
+
+div.lm-TabBar-tabCloseIcon:hover > svg > g.jp-icon-selectable {
+    fill: cyan !important;
+}
+
+div.lm-TabBar-tabCloseIcon > svg > g.jp-icon-busy {
+    fill: none !important;
+}
+

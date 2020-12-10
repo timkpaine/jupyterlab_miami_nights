@@ -1,5 +1,5 @@
 # jupyterlab_miami_nights
-Combination of VS Code's SynthWave '84 and JupyterLab's Neon Night, with the glowing of "Neon Dreams" enabled
+Combination of VS Code's SynthWave '84 and JupyterLab's [Neon Night](https://github.com/yeebc/jupyterlab-neon-theme), with the glowing of "Neon Dreams" enabled
 <img src="https://raw.githubusercontent.com/timkpaine/jupyterlab_miami_nights/master/screenshots/Miami Nights.png" />
 
 
