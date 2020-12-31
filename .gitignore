@@ -50,3 +50,5 @@ yarn-error.log
 
 junit.xml
 tsconfig.tsbuildinfo
+
+.autoversion

@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'lib'),
     // we won't use these JS files, only the extracted CSS
-    filename: '[name].js',
+    filename: '_ignore.js',
     publicPath: ''
   },
   module: {
