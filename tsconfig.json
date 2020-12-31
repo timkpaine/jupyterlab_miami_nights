@@ -18,8 +18,8 @@
     "target": "es2017",
     "types": [],
 
-    "outDir": "lib",
-    "rootDir": "src"
+    "outDir": "lib/",
+    "rootDir": "src/"
   },
   "include": [
     "src/*"
