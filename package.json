@@ -29,7 +29,6 @@
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "style": "style/index.css",
   "directories": {
     "lib": "lib/"
   },
@@ -92,6 +91,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/timkpaine/jupyterlab_miami_nights.git"
-  },
-  "styleModule": "style/index.js"
+  }
 }
