@@ -16,19 +16,23 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+
     - name: Install node
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
-       node-version: '14.x'
+        node-version: '14.x'
+        cache: 'yarn'
+        cache-dependency-path: yarn.lock
+
     - name: Install Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v3
       with:
         python-version: '3.8'
         architecture: 'x64'
-
+        cache: 'pip'
 
     - name: Setup pip cache
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: ~/.cache/pip
         key: pip-3.8-${{ hashFiles('package.json') }}
@@ -39,8 +43,9 @@ jobs:
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path
       run: echo "::set-output name=dir::$(yarn cache dir)"
+
     - name: Setup yarn cache
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
       with:
         path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
