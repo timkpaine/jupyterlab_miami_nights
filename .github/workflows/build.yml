@@ -30,6 +30,7 @@ jobs:
         python-version: '3.8'
         architecture: 'x64'
         cache: 'pip'
+        cache-dependency-path: 'setup.py'
 
     - name: Setup pip cache
       uses: actions/cache@v3
