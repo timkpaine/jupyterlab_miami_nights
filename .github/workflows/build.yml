@@ -3,13 +3,14 @@ name: Build
 on:
   push:
     branches: main
+    tags:
+      - v*
+    paths-ignore:
+      - screenshots/
+      - LICENSE
+      - README.md
   pull_request:
     branches: '*'
-  tags:
-  paths-ignore:
-    - screenshots/
-    - LICENSE
-    - README.md
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
