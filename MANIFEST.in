@@ -1,21 +1,30 @@
 include LICENSE
 include README.md
+
+include .bumpversion.cfg
 include pyproject.toml
-include jupyter-config/jupyterlab_miami_nights.json
+include Makefile
 
-include package.json
-include install.json
-include ts*.json
-include yarn.lock
+graft jupyterlab_miami_nights
 
-graft jupyterlab_miami_nights/labextension
+# grab js
+graft js
+prune js/coverage
+prune js/dist
+prune js/docs
+prune js/lib
+prune js/node_modules
 
-# Javascript files
-graft src
-graft style
-prune **/node_modules
-prune lib
-prune binder
+# get rid of binder
+prune .github
+
+# get rid of docs
+prune docs
+
+# get rid of test and lint artifacts
+prune .pytest_cache
+prune .ruff_cache
+prune .mypy_cache
 
 # Patterns to exclude from any directory
 global-exclude *~
