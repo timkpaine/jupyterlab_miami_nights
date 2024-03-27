@@ -27,6 +27,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 :root {
   /* Basic color scheme*/
   --neon-night-red: #ff0079;
+  --neon-night-red-transparent: #ff00798a;
   --neon-night-blue0: #51cdff;
   --neon-night-blue1: #00acff;
   --neon-night-yellow: #ffde63;

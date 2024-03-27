@@ -6,10 +6,10 @@ body {
 #jupyterlab-splash.dark {
   background-color: var(--neon-night-bg0);
  }
- 
+
 .cm-s-jupyter .CodeMirror-activeline-background,
 .cm-s-jupyter .CodeMirror-gutter, .lm-DockPanel-tabBar .lm-TabBar-tab,
-.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current, 
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current,
 .lm-DockPanel-tabBar .lm-TabBar-tab:hover:not(.lm-mod-current) {
    background-color: var(--jp-layout-color0);
  }
@@ -18,7 +18,7 @@ body {
    background-color: var(--jp-layout-color1);
  }
 
- .lm-MenuBar-item.lm-mod-active, 
+ .lm-MenuBar-item.lm-mod-active,
  .lm-MenuBar.lm-mod-active .lm-MenuBar-item.lm-mod-active {
   background-color: #5d5b7b54;
  }
@@ -27,7 +27,7 @@ body {
   background: transparent;
   padding: 4px;
  }
-  
+
  .lm-Menu, .jp-Tooltip {
   border: 1px solid #2f2d43;
 }
@@ -144,7 +144,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   padding-top: 6px;  /* Works well with 13px code size */
 }
 
-.jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-InputPrompt, 
+.jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-InputPrompt,
 .jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-OutputPrompt {
   text-shadow: none;
 }
@@ -163,14 +163,14 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 /* Neon off*/
-.jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser, 
-.jp-InputCollapser.jp-Cell-inputCollapser.jp-Collapser, 
+.jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser,
+.jp-InputCollapser.jp-Cell-inputCollapser.jp-Collapser,
 .jp-InputCollapser.jp-Cell-inputCollapser.jp-Collapser:hover{
   background: var(--neon-night-blue1);
 }
 
 .jp-Cell.jp-mod-active .jp-OutputCollapser.jp-Cell-outputCollapser,
-.jp-OutputCollapser.jp-Cell-outputCollapser.jp-Collapser, 
+.jp-OutputCollapser.jp-Cell-outputCollapser.jp-Collapser,
 .jp-OutputCollapser.jp-Cell-outputCollapser.jp-Collapser:hover{
   background: var(--neon-night-purple2);
 }
@@ -258,7 +258,7 @@ span.cm-keyword:hover {
 
 .lm-DockPanel-tabBar .lm-TabBar-tab {
   margin-left: 2px;
-  transition: text-shadow cubic-bezier(0, 0.2, 0, 0.2) 0.2s, color cubic-bezier(0, 0.2, 0, 0.2) 0.2s, 
+  transition: text-shadow cubic-bezier(0, 0.2, 0, 0.2) 0.2s, color cubic-bezier(0, 0.2, 0, 0.2) 0.2s,
   opacity 0.2s;
 }
 
@@ -266,7 +266,7 @@ span.cm-keyword:hover {
   top: auto;
   bottom: calc(-1 * var(--jp-border-width));
   height: 1.5px;
-} 
+}
 
 .lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-closable > .lm-TabBar-tabCloseIcon {
   opacity: 0;
@@ -287,7 +287,7 @@ span.cm-keyword:hover {
 }
 
 
-.lm-DockPanel-tabBar .lm-TabBar-tab:hover:not(.lm-mod-current), 
+.lm-DockPanel-tabBar .lm-TabBar-tab:hover:not(.lm-mod-current),
 .lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
   color: #ffeef6;
   text-shadow: 0 0 2px #b33576, 0 0 6px #6b2e4e, 0 0 6px #6b2e4e, 2px 2px 1px #000;
@@ -303,7 +303,7 @@ span.cm-keyword:hover {
   margin: 16px 16px 0 0;
 }
 
-.jp-DocumentSearch-overlay, .jp-DocumentSearch-overlay-row:first-of-type, 
+.jp-DocumentSearch-overlay, .jp-DocumentSearch-overlay-row:first-of-type,
 .bp3-input-group.filter {
   border: 1.5px solid #eb244f;
   box-shadow: 0 0 5px 0 #951430, 0 0 10px 0px #951430, inset 0 0 5px 1px #951430;
@@ -342,57 +342,59 @@ span.cm-keyword:hover {
   color: var(--neon-night-red);
 }
 
-.jp-RenderedText pre .ansi-red-intense-fg, 
+.jp-RenderedText pre .ansi-red-intense-fg,
 .jp-RenderedText pre .ansi-red-intense-bg {
   color: var(--neon-night-red);
 }
 
-.jp-RenderedText pre .ansi-blue-fg, 
+.jp-RenderedText pre .ansi-blue-fg,
 .jp-RenderedText pre .ansi-blue-bg {
   color: var(--neon-night-purple1);
 }
 
-.jp-RenderedText pre .ansi-blue-intense-fg, 
+.jp-RenderedText pre .ansi-blue-intense-fg,
 .jp-RenderedText pre .ansi-blue-intense-bg {
   color: var(--neon-night-blue0);
 }
 
-.jp-RenderedText pre .ansi-green-fg, 
+.jp-RenderedText pre .ansi-green-fg,
 .jp-RenderedText pre .ansi-green-bg {
   color: var(--neon-night-purple3);
 }
 
-.jp-RenderedText pre .ansi-green-intense-fg, 
+.jp-RenderedText pre .ansi-green-intense-fg,
 .jp-RenderedText pre .ansi-green-intense-bg {
   color: var(--neon-night-purple2);
 }
 
-.jp-RenderedText pre .ansi-yellow-fg, 
+.jp-RenderedText pre .ansi-yellow-fg,
 .jp-RenderedText pre .ansi-yellow-bg {
-  color: var(--neon-night-purple0);
+  color: var(--neon-night-yellow);
+  background-color: var(--neon-night-red-transparent);
 }
 
-.jp-RenderedText pre .ansi-yellow-intense-fg, 
+.jp-RenderedText pre .ansi-yellow-intense-fg,
 .jp-RenderedText pre .ansi-yellow-intense-bg {
-  color: var(--neon-night-orange);
+  color: var(--neon-night-red);
+  background-color: var(--neon-night-yellow);
 }
 
-.jp-RenderedText pre .ansi-cyan-fg, 
+.jp-RenderedText pre .ansi-cyan-fg,
 .jp-RenderedText pre .ansi-cyan-fg {
   color: var(--neon-night-yellow);
 }
 
-.jp-RenderedText pre .ansi-cyan-intense-fg, 
+.jp-RenderedText pre .ansi-cyan-intense-fg,
 .jp-RenderedText pre .ansi-cyan-intense-bg {
   color: var(--neon-night-cyan);
 }
 
-.jp-RenderedText pre .ansi-magenta-fg, 
+.jp-RenderedText pre .ansi-magenta-fg,
 .jp-RenderedText pre .ansi-magenta-fg {
   color: var(--neon-night-pink);
 }
 
-.jp-RenderedText pre .ansi-magenta-intense-fg, 
+.jp-RenderedText pre .ansi-magenta-intense-fg,
 .jp-RenderedText pre .ansi-magenta-intense-bg {
   color: var(--neon-night-peach);
 }
