@@ -28,8 +28,8 @@ tests: testpy testjs ## run the tests
 # Linting #
 ###########
 lintpy:  ## Black/flake8 python
-	python -m ruff jupyterlab_miami_nights setup.py
-	python -m black --check jupyterlab_miami_nights setup.py
+	python -m ruff check jupyterlab_miami_nights
+	python -m ruff format --check jupyterlab_miami_nights
 
 lintjs:  ## ESlint javascript
 	cd js; yarn lint
@@ -37,8 +37,8 @@ lintjs:  ## ESlint javascript
 lint: lintpy lintjs  ## run linter
 
 fixpy:  ## Black python
-	python -m ruff jupyterlab_miami_nights setup.py --fix
-	python -m black jupyterlab_miami_nights/ setup.py
+	python -m ruff check --fix jupyterlab_miami_nights
+	python -m ruff format jupyterlab_miami_nights
 
 fixjs:  ## ESlint Autofix JS
 	cd js; yarn fix
