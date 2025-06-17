@@ -1,4 +1,19 @@
-const esModules = ["@finos", "@jupyter", "@jupyterlab", "@jupyter-widgets", "@microsoft", "lib0", "y-protocols", "internmap", "delaunator", "robust-predicates", "lodash-es", "nanoid", "exenv-es6"].join("|");
+const esModules = [
+  "@finos",
+  "@jupyter",
+  "@jupyterlab",
+  "@jupyter-widgets",
+  "@microsoft",
+  "@rjsf",
+  "delaunator",
+  "exenv-es6",
+  "internmap",
+  "lib0",
+  "lodash-es",
+  "nanoid",
+  "robust-predicates",
+  "y-protocols",
+].join("|");
 
 module.exports = {
   moduleDirectories: ["node_modules", "src", "tests"],

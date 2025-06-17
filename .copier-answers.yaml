@@ -1,0 +1,11 @@
+# Changes here will be overwritten by Copier
+_commit: 5c63cb2
+_src_path: https://github.com/python-project-templates/base.git
+add_extension: jupyter
+email: t.paine154@gmail.com
+github: timkpaine
+project_description: Combination of VS Code's SynthWave '84 and JupyterLab's Neon
+    Night, with the glowing of "Neon Dreams" enabled
+project_name: jupyterlab miami nights
+python_version_primary: '3.11'
+team: the jupyterlab miami nights authors

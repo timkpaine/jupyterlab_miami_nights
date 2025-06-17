@@ -4,10 +4,10 @@ import {IThemeManager} from "@jupyterlab/apputils";
  * A flat, 80's neon inspired theme for JupyterLab.
  */
 const plugin = {
-  id: "@timkpaine/jupyterlab_miami_nights:plugin",
+  id: "jupyterlab_miami_nights:plugin",
   requires: [IThemeManager],
   activate: (app, manager) => {
-    const style = "@timkpaine/jupyterlab_miami_nights/index.css";
+    const style = "jupyterlab_miami_nights/index.css";
 
     manager.register({
       name: "JupyterLab Miami Nights",

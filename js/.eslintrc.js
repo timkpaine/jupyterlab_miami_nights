@@ -51,6 +51,7 @@ module.exports = {
     "spaced-comment": "off",
     "valid-typeof": "error",
 
+    "import/extensions": "off",
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off",
     "import/no-extraneous-dependencies": "off",
