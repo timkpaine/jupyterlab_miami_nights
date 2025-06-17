@@ -1,13 +1,23 @@
-# jupyterlab_miami_nights
+# jupyterlab miami nights
+
 Combination of VS Code's SynthWave '84 and JupyterLab's [Neon Night](https://github.com/yeebc/jupyterlab-neon-theme), with the glowing of "Neon Dreams" enabled
-<img src="https://raw.githubusercontent.com/timkpaine/jupyterlab_miami_nights/master/screenshots/Miami Nights.png" />
+<img src="https://raw.githubusercontent.com/timkpaine/jupyterlab_miami_nights/main/docs/img/Miami Nights.png" />
 
+[![Build Status](https://github.com/timkpaine/jupyterlab-miami-nights/actions/workflows/build.yaml/badge.svg?branch=main&event=push)](https://github.com/timkpaine/jupyterlab-miami-nights/actions/workflows/build.yaml)
+[![codecov](https://codecov.io/gh/timkpaine/jupyterlab-miami-nights/branch/main/graph/badge.svg)](https://codecov.io/gh/timkpaine/jupyterlab-miami-nights)
+[![License](https://img.shields.io/github/license/timkpaine/jupyterlab-miami-nights)](https://github.com/timkpaine/jupyterlab-miami-nights)
+[![PyPI](https://img.shields.io/pypi/v/jupyterlab-miami-nights.svg)](https://pypi.python.org/pypi/jupyterlab-miami-nights)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/timkpaine/jupyterlab-miami-nights/main?urlpath=lab)
 
-## Changes
+## Overview
+
 - All material changes are implemented in `neondreams.css`
 - Override all code elements to glow
 - Gradient to Tabs and Sidebar
 - Override fonts
+
+> [!NOTE]
+> This library was generated using [copier](https://copier.readthedocs.io/en/stable/) from the [Base Python Project Template repository](https://github.com/python-project-templates/base).
 
 
 # original readme below
@@ -46,7 +56,7 @@ There is a big update for the color scheme since version 3.0.0. If you are **old
 
 
 ## Customize
-You may don't like the default background or the transparent UI, so codes concerning these controversial designs are separately put into [`custom.css`](https://github.com/yeebc/jupyterlab-neon-theme/tree/master/style/custom.css) and detailly commented for you to customize. 
+You may don't like the default background or the transparent UI, so codes concerning these controversial designs are separately put into [`custom.css`](https://github.com/yeebc/jupyterlab-neon-theme/tree/master/style/custom.css) and detailly commented for you to customize.
 
 After you edited css files, please follow instructions in the [Development installation](https://github.com/yeebc/jupyterlab-neon-theme#development-installation) to reinstall.
 

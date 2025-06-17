@@ -1,21 +1,19 @@
 [build-system]
 requires = [
-    "hatchling>=1.3.1",
+    "hatchling",
     "hatch-jupyter-builder",
     "jupyterlab>=4,<5",
 ]
-build-backend = "hatchling.build"
+build-backend="hatchling.build"
 
 [project]
-name = "jupyterlab_miami_nights"
+name = "jupyterlab-miami-nights"
 description = "A glowing 80s theme based on Synthwave '84 and  JupyterLab's Neon Night theme by yeebc"
-version = "0.4.2"
+authors = [{name = "the jupyterlab miami nights authors", email = "t.paine154@gmail.com"}]
 readme = "README.md"
 license = { file = "LICENSE" }
-requires-python = ">=3.7"
-authors = [
-    { name = "the jupyterlab_miami_nights authors" },
-]
+version = "0.4.2"
+requires-python = ">=3.9"
 keywords = [
     "Jupyter",
     "JupyterLab",
@@ -25,14 +23,16 @@ classifiers = [
     "Framework :: Jupyter",
     "Framework :: Jupyter :: JupyterLab",
     "Programming Language :: Python",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
-    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
 ]
+
 dependencies = [
     "jupyterlab>=4,<5",
 ]
@@ -44,12 +44,15 @@ develop = [
     "check-manifest",
     "hatch-jupyter-builder",
     "hatchling",
-    "ruff",
+    "jupyterlab>=4,<5",
     "pytest",
     "pytest-cov",
+    "ruff",
     "twine",
     "wheel",
 ]
+
+[project.scripts]
 
 [project.urls]
 Repository = "https://github.com/timkpaine/jupyterlab_miami_nights"
@@ -77,24 +80,54 @@ replace = '"version": "{new_version}"'
 
 [tool.check-manifest]
 ignore = [
-	"jupyterlab_miami_nights/labextension/**",
-	"js/**"
+    ".copier-answers.yaml",
+    "js/pnpm-lock.yaml",
+    "Makefile",
+    "jupyterlab_miami_nights/labextension/**",
+    "docs/**/*",
+    "js/dist/**/*",
+    "js/lib/*",
 ]
+
+[tool.coverage.run]
+branch = true
+omit = [
+    "jupyterlab_miami_nights/tests/integration/",
+]
+[tool.coverage.report]
+exclude_also = [
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "@(abc\\.)?abstractmethod",
+]
+ignore_errors = true
+fail_under = 50
 
 [tool.hatch.build]
 artifacts = [
-    "jupyterlab_miami_nights/labextension"
+    "jupyterlab_miami_nights/labextension",
 ]
+
+[tool.hatch.build.sources]
+src = "/"
+
+[tool.hatch.build.targets.sdist]
+packages = [
+    "jupyterlab_miami_nights",
+    "js"
+]
+exclude = [
+    "/js/dist",
+    "/js/node_modules",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["jupyterlab_miami_nights"]
+exclude = ["js"]
 
 [tool.hatch.build.targets.wheel.shared-data]
 "jupyterlab_miami_nights/labextension" = "share/jupyter/labextensions/@timkpaine/jupyterlab_miami_nights"
 "jupyterlab_miami_nights/extension/install.json" = "share/jupyter/labextensions/@timkpaine/jupyterlab_miami_nights/install.json"
-
-[tool.hatch.build.targets.sdist]
-exclude = [
-    ".github",
-    "screebshots",
-]
 
 [tool.hatch.build.hooks.jupyter-builder]
 build-function = "hatch_jupyter_builder.npm_builder"
@@ -105,7 +138,7 @@ skip-if-exists = [
     "jupyterlab_miami_nights/labextension/package.json",
 ]
 dependencies = [
-    "hatch-jupyter-builder>=0.5.0",
+    "hatch-jupyter-builder",
 ]
 
 [tool.hatch.build.hooks.jupyter-builder.build-kwargs]
@@ -113,8 +146,12 @@ path = "js"
 build_cmd = "build"
 npm = "pnpm"
 
+[tool.pytest.ini_options]
+addopts = ["-vvv", "--junitxml=junit.xml"]
+testpaths = "jupyterlab_miami_nights/tests"
+
 [tool.ruff]
-line-length = 120
+line-length = 150
 
 [tool.ruff.lint]
 extend-select = ["I"]
@@ -123,13 +160,7 @@ extend-select = ["I"]
 combine-as-imports = true
 default-section = "third-party"
 known-first-party = ["jupyterlab_miami_nights"]
-section-order = [
-    "future",
-    "standard-library",
-    "third-party",
-    "first-party",
-    "local-folder",
-]
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
 
 [tool.ruff.lint.per-file-ignores]
-"__init__.py" = ["F401", "F403"]
+"__init__.py" = ["F401"]

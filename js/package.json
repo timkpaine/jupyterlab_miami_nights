@@ -1,12 +1,13 @@
 {
-  "name": "@timkpaine/jupyterlab_miami_nights",
+  "name": "jupyterlab_miami_nights",
   "version": "0.4.2",
   "description": "A glowing 80s theme based on Synthwave '84 and  JupyterLab's Neon Night theme by yeebc",
-  "author": "the jupyterlab_miami_nights authors",
+  "author": "the jupyterlab miami nights authors <t.paine154@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/finos/jupyterlab_templates.git"
   },
+  "license": "BSD-3-Clause",
   "keywords": [
     "jupyter",
     "jupyterlab",
@@ -15,15 +16,11 @@
     "neon",
     "cyberpunk"
   ],
-  "license": "BSD-3-Clause",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
-    "lib/*.d.ts",
-    "lib/*.js.map",
-    "lib/*.js",
-    "lib/*.css",
-    "style/*",
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.css",
     "style/index.js"
   ],
   "sideEffects": [
@@ -32,17 +29,6 @@
   ],
   "directories": {
     "lib": "lib/"
-  },
-  "scripts": {
-    "build:babel": "babel src/ --source-maps --out-dir lib/",
-    "build:css": "cpx \"style/*\" \"lib/\"",
-    "build:lab": "rimraf ../jupyterlab_templates/labextension && jupyter labextension build .",
-    "build": "npm-run-all clean build:*",
-    "clean": "rimraf lib ../jupyterlab_miami_nights/labextension",
-    "fix": "pnpm run lint --fix",
-    "lint": "eslint -c .eslintrc.js --ext .js src/ tests/",
-    "prepublishOnly": "npm run build",
-    "test": "jest --coverage --collectCoverageFrom=src/*.{js}"
   },
   "jupyterlab": {
     "extension": "lib/index.js",
@@ -59,6 +45,18 @@
       }
     }
   },
+  "scripts": {
+    "build:babel": "babel src/ --source-maps --out-dir lib/",
+    "build:css": "cpx \"style/*\" \"lib/\"",
+    "build:labextension": "rimraf ../jupyterlab_miami_nights/labextension && jupyter labextension build .",
+    "build": "pnpm clean && pnpm build:babel && pnpm build:css && pnpm build:labextension",
+    "clean": "rimraf lib ../jupyterlab_miami_nights/labextension",
+    "fix": "pnpm run lint --fix",
+    "lint": "eslint -c .eslintrc.js --ext .js src/ tests/",
+    "preinstall": "npx only-allow pnpm",
+    "prepublishOnly": "pnpm run build",
+    "test": "jest --coverage --collectCoverageFrom=src/*.{js}"
+  },
   "dependencies": {
     "@jupyterlab/application": "^4.0.5",
     "@jupyterlab/apputils": "^4.1.5",
@@ -66,34 +64,28 @@
     "sanitize-html": "^2.7.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.22.10",
-    "@babel/core": "^7.22.11",
-    "@babel/eslint-parser": "^7.22.11",
-    "@babel/preset-env": "^7.22.14",
-    "@jupyterlab/builder": "^4.0.5",
-    "babel-jest": "^29.6.4",
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.1",
+    "@babel/eslint-parser": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@jupyterlab/builder": "^4.4.2",
+    "babel-jest": "^29.7.0",
     "cpx": "^1.5.0",
-    "eslint": "^8.48.0",
+    "eslint": "^8.57.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-jest": "^27.2.2",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jest": "^28.11.0",
     "eslint-plugin-json": "^3.1.0",
-    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^5.4.0",
     "isomorphic-fetch": "^3.0.0",
-    "jest": "^29.6.4",
-    "jest-environment-jsdom": "^29.6.4",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "jest-junit": "^16.0.0",
-    "jest-transform-css": "^6.0.1",
+    "jest-transform-css": "^6.0.2",
     "mkdirp": "^3.0.1",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^3.0.3",
-    "rimraf": "^5.0.1"
-  },
-  "resolutions": {
-    "json5": "^2.2.3",
-    "sanitize-html": "^2.7.1",
-    "ws": "^7.4.6"
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1"
   }
 }
