@@ -1,6 +1,7 @@
 [build-system]
 requires = [
     "hatchling>=1.3.1",
+    "hatch-jupyter-builder",
     "jupyterlab>=4,<5",
 ]
 build-backend = "hatchling.build"
@@ -38,19 +39,41 @@ dependencies = [
 
 [project.optional-dependencies]
 develop = [
+    "build",
+    "bump-my-version",
     "check-manifest",
+    "hatch-jupyter-builder",
+    "hatchling",
     "ruff",
     "pytest",
     "pytest-cov",
-]
-test = [
-    "pytest",
-    "pytest-cov",
+    "twine",
+    "wheel",
 ]
 
 [project.urls]
 Repository = "https://github.com/timkpaine/jupyterlab_miami_nights"
 Homepage = "https://github.com/timkpaine/jupyterlab_miami_nights"
+
+[tool.bumpversion]
+current_version = "0.4.2"
+commit = true
+tag = true
+
+[[tool.bumpversion.files]]
+filename = "jupyterlab_miami_nights/__init__.py"
+search = '__version__ = "{current_version}"'
+replace = '__version__ = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "js/package.json"
+search = '"version": "{current_version}"'
+replace = '"version": "{new_version}"'
 
 [tool.check-manifest]
 ignore = [
@@ -88,9 +111,13 @@ dependencies = [
 [tool.hatch.build.hooks.jupyter-builder.build-kwargs]
 path = "js"
 build_cmd = "build"
+npm = "pnpm"
 
 [tool.ruff]
 line-length = 120
+
+[tool.ruff.lint]
+extend-select = ["I"]
 
 [tool.ruff.lint.isort]
 combine-as-imports = true

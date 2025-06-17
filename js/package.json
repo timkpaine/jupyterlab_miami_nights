@@ -39,7 +39,7 @@
     "build:lab": "rimraf ../jupyterlab_templates/labextension && jupyter labextension build .",
     "build": "npm-run-all clean build:*",
     "clean": "rimraf lib ../jupyterlab_miami_nights/labextension",
-    "fix": "yarn lint --fix",
+    "fix": "pnpm run lint --fix",
     "lint": "eslint -c .eslintrc.js --ext .js src/ tests/",
     "prepublishOnly": "npm run build",
     "test": "jest --coverage --collectCoverageFrom=src/*.{js}"
