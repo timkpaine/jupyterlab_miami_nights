@@ -123,11 +123,13 @@ exclude = [
 
 [tool.hatch.build.targets.wheel]
 packages = ["jupyterlab_miami_nights"]
-exclude = ["js"]
+exclude = [
+    "/js"
+]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"jupyterlab_miami_nights/labextension" = "share/jupyter/labextensions/@timkpaine/jupyterlab_miami_nights"
-"jupyterlab_miami_nights/extension/install.json" = "share/jupyter/labextensions/@timkpaine/jupyterlab_miami_nights/install.json"
+"jupyterlab_miami_nights/labextension" = "share/jupyter/labextensions/jupyterlab_miami_nights"
+"jupyterlab_miami_nights/extension/install.json" = "share/jupyter/labextensions/jupyterlab_miami_nights/install.json"
 
 [tool.hatch.build.hooks.jupyter-builder]
 build-function = "hatch_jupyter_builder.npm_builder"
