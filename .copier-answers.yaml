@@ -1,8 +1,9 @@
 # Changes here will be overwritten by Copier
-_commit: c53b04c
+_commit: 9642da9
 _src_path: https://github.com/python-project-templates/base.git
 add_docs: false
 add_extension: jupyter
+add_wiki: false
 email: t.paine154@gmail.com
 github: timkpaine
 project_description: Combination of VS Code's SynthWave '84 and JupyterLab's Neon

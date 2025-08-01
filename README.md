@@ -11,11 +11,14 @@ Combination of VS Code's SynthWave '84 and JupyterLab's [Neon Night](https://git
 
 ## Overview
 
+<<<<<<< before updating
 - All material changes are implemented in `neondreams.css`
 - Override all code elements to glow
 - Gradient to Tabs and Sidebar
 - Override fonts
 
+=======
+>>>>>>> after updating
 > [!NOTE]
 > This library was generated using [copier](https://copier.readthedocs.io/en/stable/) from the [Base Python Project Template repository](https://github.com/python-project-templates/base).
 
