@@ -43,7 +43,10 @@ develop = [
     "bump-my-version",
     "check-manifest",
     "hatch-jupyter-builder",
+    "codespell>=2.4,<2.5",
     "hatchling",
+    "mdformat>=0.7.22,<0.8",
+    "mdformat-tables>=1",
     "jupyterlab>=4,<5",
     "pytest",
     "pytest-cov",
@@ -62,6 +65,7 @@ Homepage = "https://github.com/timkpaine/jupyterlab_miami_nights"
 current_version = "0.4.2"
 commit = true
 tag = true
+commit_args = "-s"
 
 [[tool.bumpversion.files]]
 filename = "jupyterlab_miami_nights/__init__.py"
@@ -83,6 +87,7 @@ ignore = [
     ".copier-answers.yaml",
     "js/pnpm-lock.yaml",
     "Makefile",
+    ".vscode/*",
     "jupyterlab_miami_nights/labextension/**",
     "docs/**/*",
     "js/dist/**/*",
