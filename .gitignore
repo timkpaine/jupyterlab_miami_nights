@@ -139,10 +139,13 @@ js/dist
 js/lib
 js/node_modules
 js/*.tgz
+jupyterlab_miami_nights/extension
 
 # Jupyter
 .ipynb_checkpoints
 .autoversion
+!jupyterlab_miami_nights/extension/jupyterlab_miami_nights.json
+!jupyterlab_miami_nights/extension/install.json
 jupyterlab_miami_nights/nbextension
 jupyterlab_miami_nights/labextension
 
