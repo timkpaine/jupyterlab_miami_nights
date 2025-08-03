@@ -1,9 +1,5 @@
 [build-system]
-requires = [
-    "hatchling",
-    "hatch-jupyter-builder",
-    "jupyterlab>=4,<5",
-]
+requires = ["hatchling", "hatch-js", "jupyterlab>=4,<5"]
 build-backend="hatchling.build"
 
 [project]
@@ -42,8 +38,8 @@ develop = [
     "build",
     "bump-my-version",
     "check-manifest",
-    "hatch-jupyter-builder",
     "codespell>=2.4,<2.5",
+    "hatch-js",
     "hatchling",
     "mdformat>=0.7.22,<0.8",
     "mdformat-tables>=1",
@@ -88,6 +84,7 @@ ignore = [
     "js/pnpm-lock.yaml",
     "Makefile",
     ".vscode/*",
+    "jupyterlab_miami_nights/extension/**",
     "jupyterlab_miami_nights/labextension/**",
     "docs/**/*",
     "js/dist/**/*",
@@ -136,22 +133,14 @@ exclude = [
 "jupyterlab_miami_nights/labextension" = "share/jupyter/labextensions/jupyterlab_miami_nights"
 "jupyterlab_miami_nights/extension/install.json" = "share/jupyter/labextensions/jupyterlab_miami_nights/install.json"
 
-[tool.hatch.build.hooks.jupyter-builder]
-build-function = "hatch_jupyter_builder.npm_builder"
-ensured-targets = [
-    "jupyterlab_miami_nights/labextension/package.json",
-]
-skip-if-exists = [
-    "jupyterlab_miami_nights/labextension/package.json",
-]
-dependencies = [
-    "hatch-jupyter-builder",
-]
-
-[tool.hatch.build.hooks.jupyter-builder.build-kwargs]
+[tool.hatch.build.hooks.hatch-js]
 path = "js"
+install_cmd = "install"
 build_cmd = "build"
-npm = "pnpm"
+tool = "pnpm"
+targets = [
+    "jupyterlab_miami_nights/labextension/package.json",
+]
 
 [tool.pytest.ini_options]
 addopts = ["-vvv", "--junitxml=junit.xml"]
