@@ -133,22 +133,12 @@ exclude = [
 "jupyterlab_miami_nights/labextension" = "share/jupyter/labextensions/jupyterlab_miami_nights"
 "jupyterlab_miami_nights/extension/install.json" = "share/jupyter/labextensions/jupyterlab_miami_nights/install.json"
 
-<<<<<<< before updating
-[tool.hatch.build.hooks.jupyter-builder]
-build-function = "hatch_jupyter_builder.npm_builder"
-ensured-targets = [
-    "jupyterlab_miami_nights/labextension/package.json",
-]
-skip-if-exists = [
-=======
 [tool.hatch.build.hooks.hatch-js]
 path = "js"
 install_cmd = "install"
 build_cmd = "build"
 tool = "pnpm"
 targets = [
-    "jupyterlab_miami_nights/nbextension/static/notebook.js",
->>>>>>> after updating
     "jupyterlab_miami_nights/labextension/package.json",
 ]
 
