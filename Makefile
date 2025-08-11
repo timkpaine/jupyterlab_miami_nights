@@ -134,7 +134,7 @@ major:  ## bump a major version
 ########
 .PHONY: dist dist-py dist-js dist-check publish
 
-dist-py:  # build python dists
+dist-py:  ## build python dists
 	python -m build -w -s
 
 dist-js:  # build js dists
@@ -145,7 +145,7 @@ dist-check:  ## run python dist checker with twine
 
 dist: clean build dist-js dist-py dist-check  ## build all dists
 
-publish: dist  # publish python assets
+publish: dist  ## publish python assets
 
 #########
 # CLEAN #

@@ -34,7 +34,7 @@ jobs:
         node-version: [20.x]
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
 
     - uses: actions-ext/python/setup@main
       with:
@@ -42,7 +42,7 @@ jobs:
 
     - uses: actions-ext/node/setup@main
       with:
-        version: 20.x
+        version: 22.x
 
     - name: Install dependencies
       run: make develop
