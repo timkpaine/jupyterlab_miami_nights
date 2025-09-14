@@ -146,6 +146,7 @@ jupyterlab_miami_nights/extension
 # Jupyter
 .ipynb_checkpoints
 .autoversion
+Untitled*.ipynb
 !jupyterlab_miami_nights/extension/jupyterlab_miami_nights.json
 !jupyterlab_miami_nights/extension/install.json
 jupyterlab_miami_nights/nbextension
