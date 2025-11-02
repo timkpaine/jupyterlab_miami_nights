@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-__version__ = "0.4.2"
+__version__ = "0.4.3"
 
 HERE = Path(__file__).parent.resolve()
 
