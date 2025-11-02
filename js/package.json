@@ -58,18 +58,10 @@
     "test": "jest --coverage --collectCoverageFrom=src/*.{js}"
   },
   "dependencies": {
-<<<<<<< before updating
-    "@jupyterlab/application": "^4.4.9",
-    "@jupyterlab/apputils": "^4.5.9",
-    "highlight.js": "^11.8.0",
-    "sanitize-html": "^2.7.1"
-=======
     "@jupyterlab/application": "^4.4.10",
     "@jupyterlab/apputils": "^4.5.10",
-    "@jupyterlab/notebook": "^4.4.10",
-    "@jupyterlab/services": "^7.4.10",
-    "@lumino/disposable": "^2.1.4"
->>>>>>> after updating
+    "highlight.js": "^11.11.1",
+    "sanitize-html": "^2.17.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.28.3",
