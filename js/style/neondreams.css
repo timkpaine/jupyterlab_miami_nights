@@ -4,6 +4,7 @@ body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-builtin,
 body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-def,
 body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-error,
 body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-keyword,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-line,
 body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-link,
 body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-number,
 body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-property,
@@ -11,7 +12,29 @@ body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-string,
 body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-variable,
 body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-variable-2,
 body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-variable-3,
-body[data-jp-theme-name="JupyterLab Miami Nights"] button[title="Switch kernel"] {
+body[data-jp-theme-name="JupyterLab Miami Nights"] jp-button[title="Switch kernel"],
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼp, /* --jp-mirror-editor-meta-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼq, /* --jp-mirror-editor-header-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼr, /* --jp-mirror-editor-header-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼs, /* --jp-mirror-editor-keyword-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼt, /* --jp-mirror-editor-atom-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼu, /* --jp-mirror-editor-number-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼv, /* --jp-mirror-editor-def-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼw, /* --jp-mirror-editor-builtin-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼx, /* --jp-mirror-editor-variable-2-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼy, /* --jp-mirror-editor-punctuation-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼz, /* --jp-mirror-editor-property-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼ10, /* --jp-mirror-editor-operator-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼ11, /* --jp-mirror-editor-comment-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼ12, /* --jp-mirror-editor-string-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼ13, /* --jp-mirror-editor-string-2-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼ14, /* --jp-mirror-editor-bracket-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼ15, /* --jp-mirror-editor-tag-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼ16, /* --jp-mirror-editor-attribute-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼ17, /* --jp-mirror-editor-quote-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼ18, /* --jp-mirror-editor-link-color */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.ͼ19
+{
     text-shadow: 0 0 2px #000, 0 0 10px;
 }
 
@@ -30,7 +53,7 @@ body[data-jp-theme-name="JupyterLab Miami Nights"] .lm-DockPanel-tabBar .lm-TabB
     font-family: var(--jp-ui-font-family) !important;
     font-size: 14px;
 }
-  
+
 /* tab title font */
 .jp-DocumentSearch-overlay *,  .filter .bp3-input {
     font-family: var(--jp-ui-font-family) !important;
@@ -38,7 +61,7 @@ body[data-jp-theme-name="JupyterLab Miami Nights"] .lm-DockPanel-tabBar .lm-TabB
 }
 
 /* tab title no shadow */
-.lm-DockPanel-tabBar .lm-TabBar-tab:hover:not(.lm-mod-current), 
+.lm-DockPanel-tabBar .lm-TabBar-tab:hover:not(.lm-mod-current),
 .lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
   color: var(--jp-ui-font-color0) !important;
   text-shadow: unset !important;
