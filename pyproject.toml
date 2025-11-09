@@ -7,13 +7,14 @@ name = "jupyterlab-miami-nights"
 description = "A glowing 80s theme based on Synthwave '84 and  JupyterLab's Neon Night theme by yeebc"
 authors = [{name = "the jupyterlab miami nights authors", email = "t.paine154@gmail.com"}]
 readme = "README.md"
-license = { file = "LICENSE" }
+license = { text = "Apache-2.0" }
 version = "0.4.3"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 keywords = [
     "Jupyter",
     "JupyterLab",
 ]
+
 classifiers = [
     "Development Status :: 4 - Beta",
     "Framework :: Jupyter",
@@ -22,7 +23,6 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
