@@ -7,21 +7,14 @@ name = "jupyterlab-miami-nights"
 description = "A glowing 80s theme based on Synthwave '84 and  JupyterLab's Neon Night theme by yeebc"
 authors = [{name = "the jupyterlab miami nights authors", email = "t.paine154@gmail.com"}]
 readme = "README.md"
-<<<<<<< before updating
-license = { file = "LICENSE" }
+license = { text = "Apache-2.0" }
 version = "0.4.3"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 keywords = [
     "Jupyter",
     "JupyterLab",
 ]
-=======
-license = { text = "Apache-2.0" }
-version = "0.1.0"
-requires-python = ">=3.10"
-keywords = []
 
->>>>>>> after updating
 classifiers = [
     "Development Status :: 4 - Beta",
     "Framework :: Jupyter",
