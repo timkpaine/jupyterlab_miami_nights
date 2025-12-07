@@ -131,14 +131,8 @@ exclude = [
 ]
 
 [tool.hatch.build.targets.wheel.shared-data]
-<<<<<<< before updating
 "jupyterlab_miami_nights/labextension" = "share/jupyter/labextensions/jupyterlab_miami_nights"
 "jupyterlab_miami_nights/extension/install.json" = "share/jupyter/labextensions/jupyterlab_miami_nights/install.json"
-=======
-"jupyterlab_miami_nights/labextension" = "share/jupyter/labextensions/jupyterlab-miami-nights"
-"jupyterlab_miami_nights/extension/install.json" = "share/jupyter/labextensions/jupyterlab-miami-nights/install.json"
-"jupyterlab_miami_nights/extension/jupyterlab_miami_nights.json" = "etc/jupyter/jupyter_server_config.d/jupyterlab_miami_nights.json"
->>>>>>> after updating
 
 [tool.hatch.build.hooks.hatch-js]
 path = "js"
