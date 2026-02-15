@@ -8,15 +8,10 @@ build-backend="hatchling.build"
 
 [project]
 name = "jupyterlab-miami-nights"
-<<<<<<< before updating
-description = "A glowing 80s theme based on Synthwave '84 and  JupyterLab's Neon Night theme by yeebc"
-authors = [{name = "the jupyterlab miami nights authors", email = "t.paine154@gmail.com"}]
-=======
 authors = [
     {name = "the jupyterlab miami nights authors", email = "t.paine154@gmail.com"},
 ]
-description = "Combination of VS Code's SynthWave '84 and JupyterLab's Neon Night, with the glowing of "Neon Dreams" enabled"
->>>>>>> after updating
+description = "A glowing 80s theme based on Synthwave '84 and  JupyterLab's Neon Night theme by yeebc"
 readme = "README.md"
 license = { text = "Apache-2.0" }
 version = "0.4.3"
