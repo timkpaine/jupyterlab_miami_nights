@@ -125,11 +125,7 @@ src = "/"
 [tool.hatch.build.targets.sdist]
 packages = [
     "jupyterlab_miami_nights",
-<<<<<<< before updating
-    "js"
-=======
     "js",
->>>>>>> after updating
 ]
 exclude = [
     "/js/dist",
