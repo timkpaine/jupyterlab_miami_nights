@@ -4,7 +4,7 @@ requires = [
     "hatch-js",
     "jupyterlab>=4,<5",
 ]
-build-backend="hatchling.build"
+build-backend = "hatchling.build"
 
 [project]
 name = "jupyterlab-miami-nights"
@@ -44,16 +44,16 @@ dependencies = [
 develop = [
     "build",
     "bump-my-version",
-    "check-manifest",
-    "codespell>=2.4,<2.5",
+    "check-dist",
+    "codespell",
     "hatch-js",
     "hatchling",
-    "mdformat>=0.7.22,<1.1",
+    "mdformat",
     "mdformat-tables>=1",
     "jupyterlab>=4,<5",
     "pytest",
     "pytest-cov",
-    "ruff>=0.9,<0.15",
+    "ruff",
     "twine",
     "ty",
     "uv",
@@ -87,24 +87,12 @@ filename = "js/package.json"
 search = '"version": "{current_version}"'
 replace = '"version": "{new_version}"'
 
-[tool.check-manifest]
-ignore = [
-    ".copier-answers.yaml",
-    "js/pnpm-lock.yaml",
-    "Makefile",
-    ".vscode/*",
-    "jupyterlab_miami_nights/extension/**",
-    "jupyterlab_miami_nights/labextension/**",
-    "docs/**/*",
-    "js/dist/**/*",
-    "js/lib/*",
-]
-
 [tool.coverage.run]
 branch = true
 omit = [
     "jupyterlab_miami_nights/tests/integration/",
 ]
+
 [tool.coverage.report]
 exclude_also = [
     "raise NotImplementedError",
@@ -128,8 +116,8 @@ packages = [
     "js",
 ]
 exclude = [
-    "/js/dist",
-    "/js/node_modules",
+    "js/dist",
+    "js/node_modules",
 ]
 
 [tool.hatch.build.targets.wheel]
@@ -137,7 +125,7 @@ packages = [
     "jupyterlab_miami_nights",
 ]
 exclude = [
-    "/js"
+    "js"
 ]
 
 [tool.hatch.build.targets.wheel.shared-data]
