@@ -60,16 +60,23 @@
   },
   "dependencies": {
     "@jupyterlab/application": "^4.5.1",
+<<<<<<< before updating
     "@jupyterlab/apputils": "^4.6.1",
     "highlight.js": "^11.11.1",
     "sanitize-html": "^2.17.0"
+=======
+    "@jupyterlab/apputils": "^4.6.6",
+    "@jupyterlab/notebook": "^4.5.1",
+    "@jupyterlab/services": "^7.5.1",
+    "@lumino/disposable": "^2.1.5"
+>>>>>>> after updating
   },
   "devDependencies": {
     "@babel/cli": "^7.28.3",
     "@babel/core": "^7.28.5",
-    "@babel/eslint-parser": "^7.28.5",
-    "@babel/preset-env": "^7.28.5",
-    "@jupyterlab/builder": "^4.5.1",
+    "@babel/eslint-parser": "^7.28.6",
+    "@babel/preset-env": "^7.29.2",
+    "@jupyterlab/builder": "^4.5.6",
     "babel-jest": "^30.2.0",
     "cpy-cli": "^6.0.0",
     "eslint": "^8.57.1",
@@ -87,6 +94,6 @@
     "jest-transform-css": "^6.0.3",
     "mkdirp": "^3.0.1",
     "prettier": "^3.8.1",
-    "rimraf": "^6.1.2"
+    "rimraf": "^6.1.3"
   }
 }
