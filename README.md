@@ -19,6 +19,14 @@ Combination of VS Code's SynthWave '84 and JupyterLab's [Neon Night](https://git
 > [!NOTE]
 > This library was generated using [copier](https://copier.readthedocs.io/en/stable/) from the [Base Python Project Template repository](https://github.com/python-project-templates/base).
 
+## Installation
+
+Install it with
+
+```
+pip install jupyterlab-miami-nights
+```
+
 # original readme below
 
 ______________________________________________________________________
