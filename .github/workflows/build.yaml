@@ -84,6 +84,16 @@ jobs:
       run: make dist
       if: matrix.os == 'ubuntu-latest'
 
+    - uses: actions-ext/python/test-wheel@main
+      with:
+        module: jupyterlab_miami_nights
+      if: matrix.os == 'ubuntu-latest'
+
+    - uses: actions-ext/python/test-sdist@main
+      with:
+        module: jupyterlab_miami_nights
+      if: matrix.os == 'ubuntu-latest'
+
     - uses: actions/upload-artifact@v7
       with:
         name: dist-${{matrix.os}}
