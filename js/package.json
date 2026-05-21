@@ -58,6 +58,11 @@
     "prepublishOnly": "pnpm run build",
     "test": "jest --coverage --collectCoverageFrom=src/*.{js}"
   },
+  "pnpm": {
+    "overrides": {
+      "webpack": "5.76.1"
+    }
+  },
   "dependencies": {
     "@jupyterlab/application": "^4.5.7",
     "@jupyterlab/apputils": "^4.6.7",
