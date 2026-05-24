@@ -66,17 +66,30 @@
   "dependencies": {
     "@jupyterlab/application": "^4.5.7",
     "@jupyterlab/apputils": "^4.6.7",
+<<<<<<< before updating
     "highlight.js": "^11.11.1",
     "sanitize-html": "^2.17.4"
+=======
+    "@jupyterlab/notebook": "^4.5.7",
+    "@jupyterlab/services": "^7.5.7",
+    "@lumino/disposable": "^2.1.5"
+>>>>>>> after updating
   },
   "devDependencies": {
     "@babel/cli": "^7.28.6",
     "@babel/core": "^7.29.0",
     "@babel/eslint-parser": "^7.28.6",
+<<<<<<< before updating
     "@babel/preset-env": "^7.29.5",
     "@jupyterlab/builder": "^4.5.7",
     "babel-jest": "^30.4.1",
     "cpy-cli": "^7.0.0",
+=======
+    "@babel/preset-env": "^7.29.2",
+    "@jupyterlab/builder": "^4.5.6",
+    "babel-jest": "^30.4.1",
+    "cpy-cli": "^6.0.0",
+>>>>>>> after updating
     "eslint": "^8.57.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -93,5 +106,10 @@
     "mkdirp": "^3.0.1",
     "prettier": "^3.8.3",
     "rimraf": "^6.1.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "webpack": "5.76.1"
+    }
   }
 }
