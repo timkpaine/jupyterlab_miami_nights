@@ -42,7 +42,7 @@ jobs:
 
     - uses: actions-ext/node/setup@main
       with:
-        version: 22.x
+        version: ${{ matrix.node-version }}
 
     - name: Install dependencies
       run: make develop
