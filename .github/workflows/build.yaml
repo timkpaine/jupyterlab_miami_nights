@@ -70,7 +70,11 @@ jobs:
       if: ${{ always() }}
 
     - name: Publish Unit Test Results
+<<<<<<< before updating
       uses: EnricoMi/publish-unit-test-result-action@d0a4676d0e0b938bc201470d88276b7c74c712b3 # v2
+=======
+      uses: EnricoMi/publish-unit-test-result-action@d0a4676d0e0b938bc201470d88276b7c74c712b3 # v2.24.0
+>>>>>>> after updating
       with:
         files: '**/junit.xml'
       if: matrix.os == 'ubuntu-latest'
