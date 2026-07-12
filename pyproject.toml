@@ -15,7 +15,7 @@ description = "A glowing 80s theme based on Synthwave '84 and  JupyterLab's Neon
 readme = "README.md"
 license = { text = "Apache-2.0" }
 version = "0.4.3"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 keywords = [
     "Jupyter",
     "JupyterLab",
@@ -32,7 +32,6 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
