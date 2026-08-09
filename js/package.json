@@ -64,7 +64,7 @@
     }
   },
   "dependencies": {
-    "@jupyterlab/application": "^4.5.7",
+    "@jupyterlab/application": "^4.5.10",
     "@jupyterlab/apputils": "^4.6.7",
     "highlight.js": "^11.11.1",
     "sanitize-html": "^2.17.6"
