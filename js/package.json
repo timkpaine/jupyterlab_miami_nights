@@ -50,10 +50,17 @@
     "build:css": "cpy \"style/*\" \"lib/\"",
     "build:extension": "mkdirp ../jupyterlab_miami_nights/extension/ && cpy --flat 'src/extension/*' '../jupyterlab_miami_nights/extension/'",
     "build:labextension": "rimraf ../jupyterlab_miami_nights/labextension && jupyter labextension build .",
+<<<<<<< before updating
     "build": "pnpm clean && pnpm build:babel && pnpm build:css && pnpm build:extension && pnpm build:labextension",
     "clean": "rimraf lib ../jupyterlab_miami_nights/labextension",
     "fix": "pnpm run lint --fix",
     "lint": "eslint -c .eslintrc.js --ext .js src/ tests/",
+=======
+    "build": "pnpm clean && pnpm build:babel && pnpm build:extension && pnpm build:labextension && pnpm build:nbextension",
+    "clean": "rimraf lib",
+    "fix": "oxlint --fix src/ tests/ && oxfmt --write \"src/**/*.js\" \"tests/**/*.js\"",
+    "lint": "oxlint src/ tests/ && oxfmt --check \"src/**/*.js\" \"tests/**/*.js\"",
+>>>>>>> after updating
     "preinstall": "npx only-allow pnpm",
     "prepublishOnly": "pnpm run build",
     "test": "jest --coverage --collectCoverageFrom=src/*.{js}"
@@ -71,6 +78,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.28.6",
+<<<<<<< before updating
     "@babel/core": "^7.29.6",
     "@babel/eslint-parser": "^7.29.7",
     "@babel/preset-env": "^7.29.5",
@@ -85,13 +93,21 @@
     "eslint-plugin-jest": "^29.15.2",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-prettier": "^5.5.6",
+=======
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.3",
+    "@jupyterlab/builder": "^4.5.10",
+    "babel-jest": "^30.4.1",
+    "cpy-cli": "^6.0.0",
+>>>>>>> after updating
     "isomorphic-fetch": "^3.0.0",
     "jest": "^30.4.2",
     "jest-environment-jsdom": "^30.4.1",
     "jest-junit": "^17.0.0",
     "jest-transform-css": "^6.0.3",
     "mkdirp": "^3.0.1",
-    "prettier": "^3.9.6",
+    "oxfmt": "^0.63.0",
+    "oxlint": "^1.78.0",
     "rimraf": "^6.1.3"
   }
 }

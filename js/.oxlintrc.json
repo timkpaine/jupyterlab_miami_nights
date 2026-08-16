@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["eslint", "import", "jest", "unicorn", "oxc"],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jasmine": true,
+    "jest": true,
+    "node": true
+  },
+  "rules": {
+    "no-nested-ternary": "warn",
+    "no-unused-vars": "warn",
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "unicorn/no-empty-file": "off"
+  }
+}
