@@ -1,5 +1,6 @@
 allowBuilds:
   "@fortawesome/fontawesome-free": true
+  "@parcel/watcher": true
   unrs-resolver: true
 
 overrides:
