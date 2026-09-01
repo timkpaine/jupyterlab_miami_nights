@@ -71,7 +71,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.28.6",
-    "@babel/core": "^7.29.6",
+    "@babel/core": "^7.29.7",
     "@babel/preset-env": "^7.29.5",
     "@jupyterlab/builder": "^4.5.7",
     "babel-jest": "^30.4.1",
