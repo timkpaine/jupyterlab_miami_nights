@@ -4,6 +4,10 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
     labels:
       - "part: github_actions"
 
@@ -13,6 +17,10 @@ updates:
       interval: "monthly"
     cooldown:
       default-days: 7
+    groups:
+      python:
+        patterns:
+          - "*"
     labels:
       - "lang: python"
       - "part: dependencies"
@@ -23,6 +31,10 @@ updates:
       interval: "monthly"
     cooldown:
       default-days: 7
+    groups:
+      javascript:
+        patterns:
+          - "*"
     labels:
       - "lang: javascript"
       - "part: dependencies"

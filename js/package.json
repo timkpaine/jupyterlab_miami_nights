@@ -65,6 +65,7 @@
   },
   "dependencies": {
     "@jupyterlab/application": "^4.6.3",
+<<<<<<< before updating
     "@jupyterlab/apputils": "^4.6.7",
     "highlight.js": "^11.12.0",
     "sanitize-html": "^2.17.7"
@@ -75,15 +76,33 @@
     "@babel/preset-env": "^7.29.5",
     "@jupyterlab/builder": "^4.5.7",
     "babel-jest": "^30.4.1",
+=======
+    "@jupyterlab/apputils": "^4.7.3",
+    "@jupyterlab/notebook": "^4.6.3",
+    "@jupyterlab/services": "^7.6.3",
+    "@lumino/disposable": "^2.1.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^8.0.4",
+    "@babel/core": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
+    "@jupyterlab/builder": "^4.5.10",
+    "babel-jest": "^30.5.1",
+>>>>>>> after updating
     "cpy-cli": "^7.0.0",
     "isomorphic-fetch": "^3.0.0",
-    "jest": "^30.4.2",
-    "jest-environment-jsdom": "^30.4.1",
+    "jest": "^30.5.1",
+    "jest-environment-jsdom": "^30.5.1",
     "jest-junit": "^17.0.0",
     "jest-transform-css": "^6.0.3",
     "mkdirp": "^3.0.1",
+<<<<<<< before updating
     "oxfmt": "^0.63.0",
     "oxlint": "^1.80.0",
+=======
+    "oxfmt": "^0.66.0",
+    "oxlint": "^1.81.0",
+>>>>>>> after updating
     "rimraf": "^6.1.3"
   }
 }
