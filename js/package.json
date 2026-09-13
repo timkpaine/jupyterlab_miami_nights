@@ -49,16 +49,9 @@
     "build:babel": "babel src/ --source-maps --out-dir lib/",
     "build:css": "cpy \"style/*\" \"lib/\"",
     "build:extension": "mkdirp ../jupyterlab_miami_nights/extension/ && cpy --flat 'src/extension/*' '../jupyterlab_miami_nights/extension/'",
-<<<<<<< before updating
-    "build:labextension": "rimraf ../jupyterlab_miami_nights/labextension && jupyter labextension build .",
+    "build:labextension": "rimraf ../jupyterlab_miami_nights/labextension && jupyter-builder build .",
     "build": "pnpm clean && pnpm build:babel && pnpm build:css && pnpm build:extension && pnpm build:labextension",
     "clean": "rimraf lib ../jupyterlab_miami_nights/labextension",
-=======
-    "build:nbextension": "mkdirp ../jupyterlab_miami_nights/nbextension/static/ && cpy --flat 'src/notebook.js' '../jupyterlab_miami_nights/nbextension/static/'",
-    "build:labextension": "rimraf ../jupyterlab_miami_nights/labextension && jupyter-builder build .",
-    "build": "pnpm clean && pnpm build:babel && pnpm build:extension && pnpm build:labextension && pnpm build:nbextension",
-    "clean": "rimraf lib",
->>>>>>> after updating
     "fix": "oxlint --fix src/ tests/ && oxfmt --write \"src/**/*.js\" \"tests/**/*.js\"",
     "lint": "oxlint src/ tests/ && oxfmt --check \"src/**/*.js\" \"tests/**/*.js\"",
     "preinstall": "npx only-allow pnpm",
