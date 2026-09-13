@@ -2,7 +2,7 @@
 requires = [
     "hatchling",
     "hatch-js",
-    "jupyterlab>=4,<5",
+    "jupyter-builder>=1.2.3,<2",
 ]
 build-backend = "hatchling.build"
 
@@ -50,6 +50,7 @@ develop = [
     "codespell",
     "hatch-js",
     "hatchling",
+    "jupyter-builder>=1.2.3,<2",
     "mdformat",
     "mdformat-tables>=1",
     "jupyterlab>=4,<5",
