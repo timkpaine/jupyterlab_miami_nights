@@ -34,12 +34,12 @@ jobs:
           persist-credentials: false
 
       - name: Setup Python
-        uses: actions-ext/python/setup@ec67f82b3bd863948308a41ecb9e70547cbb19c7
+        uses: actions-ext/python/setup@c8228d827a81b9f8c808825328af361c45461ba3
         with:
           version: "3.11"
 
       - name: Setup Node.js
-        uses: actions-ext/node/setup@34d0fdbdca883e4d0a2da0bcd0fa460fd40b80e7
+        uses: actions-ext/node/setup@03c9f6b2d9c9fa2c26cfa22d0fa379a69329b319
         with:
           version: 22.x
 
@@ -79,12 +79,12 @@ jobs:
         run: make dist
 
       - name: Test wheel
-        uses: actions-ext/python/test-wheel@ec67f82b3bd863948308a41ecb9e70547cbb19c7
+        uses: actions-ext/python/test-wheel@c8228d827a81b9f8c808825328af361c45461ba3
         with:
           module: jupyterlab_miami_nights
 
       - name: Test source distribution
-        uses: actions-ext/python/test-sdist@ec67f82b3bd863948308a41ecb9e70547cbb19c7
+        uses: actions-ext/python/test-sdist@c8228d827a81b9f8c808825328af361c45461ba3
         with:
           module: jupyterlab_miami_nights
 

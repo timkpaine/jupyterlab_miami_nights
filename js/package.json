@@ -66,8 +66,14 @@
   "dependencies": {
     "@jupyterlab/application": "^4.6.4",
     "@jupyterlab/apputils": "^4.7.4",
+<<<<<<< before updating
     "highlight.js": "^11.12.0",
     "sanitize-html": "^2.17.7"
+=======
+    "@jupyterlab/notebook": "^4.6.4",
+    "@jupyterlab/services": "^7.6.4",
+    "@lumino/disposable": "^2.1.6"
+>>>>>>> after updating
   },
   "devDependencies": {
     "@babel/cli": "^8.0.6",
@@ -77,7 +83,7 @@
     "@jupyterlab/core-meta": "^4.6.4",
     "babel-jest": "^30.5.2",
     "cpy-cli": "^7.0.0",
-    "css-loader": "^7.1.4",
+    "css-loader": "^7.1.5",
     "isomorphic-fetch": "^3.0.0",
     "jest": "^30.5.2",
     "jest-environment-jsdom": "^30.5.2",
