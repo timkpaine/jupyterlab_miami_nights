@@ -46,7 +46,7 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0
       css-loader:
-        specifier: ^7.1.4
+        specifier: ^7.1.5
         version: 7.1.5(@rspack/core@2.2.3(@module-federation/runtime-tools@2.9.0))(webpack@5.76.1)
       isomorphic-fetch:
         specifier: ^3.0.0
