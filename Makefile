@@ -79,7 +79,7 @@ check-dist:  ## check python sdist and wheel with check-dist
 	check-dist -v
 
 check-types:  ## check python types with ty
-	ty check --python $$(which python)
+	python -m ty check
 
 checks: check-dist check-types
 
