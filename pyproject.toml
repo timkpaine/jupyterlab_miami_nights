@@ -52,7 +52,7 @@ develop = [
     "hatchling",
     "jupyter-builder>=1.2.3,<2",
     "mdformat",
-    "mdformat-frontmatter",
+    "mdformat-myst",
     "mdformat-tables>=1",
     "jupyterlab>=4,<5",
     "pytest",
